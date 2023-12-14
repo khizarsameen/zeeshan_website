@@ -1,0 +1,270 @@
+
+.slide-container{
+  /* max-width: 1120px; */
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070F4;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #265DF2;
+}
+
+.swiper-navBtn{
+  color: rgb(192, 192, 48);
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: yellow;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: rgb(192, 192, 48);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+.custom-card {
+  border: 0.5px solid rgb(255, 186, 33);
+  border-radius: 5px;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding: 20px 20px;
+  /* background-color: #e1dada; */
+  /* /* background: linear-gradient(to right, #cece71, #dede4e);  */
+  box-shadow: 5px 5px 10px rgba(255, 186, 33, 0.3); 
+  background: rgb(255, 186, 33);
+      background: linear-gradient(0deg, rgba(255, 186, 33, 0.3785889355742297) 0%, rgba(255, 186, 33, 1) 100%);
+}
+.box1,
+.box2,.cart_box1,.cart_box2 {
+  border-top: 2px solid #212121 !important;
+  border-left: 2px solid #212121 !important;
+  border-bottom: 2px solid #212121 !important;
+
+  width: 30px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  text-align: center;
+
+}
+
+.box3, .cart_box3 {
+  border: 2px solid #212121 !important;
+  width: 30px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+
+  text-align: center;
+}
+
+.box1 a,
+.box2 a,
+.box3 a,
+.cart_box1 a,
+.cart_box2 a,
+.cart_box3 a
+{
+
+  color: #212121 !important;
+  text-decoration: none !important;
+}
+
+
+/* .slider_bg_box {
+position: relative;
+} */
+.black-layer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust the alpha (fourth value) for transparency */
+  z-index: 1;
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+height: 100%; /* 100% Full-height */
+width: 0; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 1; /* Stay on top */
+top: 0; /* Stay at the top */
+right: 0;
+/* background-color: #111; */
+background-color: #F5DEB3;
+overflow-x: hidden; /* Disable horizontal scroll */
+/* padding-top: 60px; Place content 60px from the top */
+transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+box-shadow: 5px 5px 10px rgba(255, 186, 33, 0.3); 
+
+}
+
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+/* position: absolute;
+top: 0;
+right: 25px; */
+color: #f9bb4a;
+font-size: 36px;
+width: 80px;
+text-decoration: none !important;
+/* margin-left: auto !important; */
+/* margin-left: 50px; */
+}
+
+.cartFooter {
+position: absolute;
+bottom: 10px;
+/* right: 25px; */
+}
+.cart-title {
+width: 520px;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-left: 240px;
+/* font-weight: bold; */
+font-size: 20px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+transition: margin-left .5s;
+padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+.cartRow {
+border-bottom: 0.5px solid #efc069;
+margin-right: 10px;
+margin-left: 10px;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+.cartcol1 {
+display: inline-block;
+width: 380px;
+
+}
+.cartcol2 {
+display: inline-block;
+
+width: 100px;
+}
+.cartcol3 {
+display: inline-block;
+
+width: 100px;
+}
